@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
-    {% include header.html %}
-    <body>
-        {{ content }}
+    <head>
+        {% include header.html %}
+
+        <script src="https://kit.fontawesome.com/09a106c908.js"></script>
+    </head>
+    <body class="tjex">
+        <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="/img/logo_small.png" alt="TJEX - Toronto Japanese Exchange" height="280">
+                </a>
+            </div>
+            <div class="navbar-menu is-active">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://meetup.com/tjex-ca">
+                        <i class="fab fa-meetup fa-3x"></i>
+                    </a>
+                    <a class="navbar-item" href="https://instagram.com/tjex.ca">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            {{ content }}
+        </section>
     </body>
 </html>
