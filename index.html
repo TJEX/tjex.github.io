@@ -1,0 +1,38 @@
+---
+permalink: /
+layout: default
+---
+<div class="columns">
+	<div class="column">
+		<div class="container">
+			<h1 class="title is-5">
+				Welcome to TJEX! ようこそ！
+			</h1>
+			<p>
+			Welcome to TJEX! A friendly community of individuals enthusiastic about the Japanese language and culture.
+			We provide a structured, organized language exchange between language learners and advanced/native speakers of English and Japanese.
+			</p>
+
+			<p>
+			TJEX is for individuals wishing to practice or improve their fluency in Japanese or English. All levels of language are welcome, even complete beginners. 
+			It’s also an excellent opportunity to meet new people, practice your English/Japanese, and have fun.
+			</p>
+
+			<p>
+			Our language exchange is every Saturday & Wednesday evening, with optional dinner or coffee afterwards.
+			We also have many special events, often taking us outside of Toronto, including our annual Maple syrup sugar bush tours, Hanami, ice wine & Niagara Falls tours, St. Jacobs Farmers’ Market trip, and girls-only events.
+			</p>
+		</div>
+	</div>
+	<div class="column">
+		<div class="container">
+			<ul>
+				{% assign events = site.events | reverse %}
+				{% for event in events limit:5 %}
+					{% include event-listing.html %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+

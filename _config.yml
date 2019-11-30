@@ -1,8 +1,16 @@
 timezone: America/Toronto
 
+
 defaults:
     -
         scope:
             path: ""
         values:
             layout: "default"
+
+
+collections:
+    events:
+        output: true
+        permalink: /:collection/:name
+        sort_by: date

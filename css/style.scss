@@ -3,3 +3,11 @@
 .tjex .navbar-item img {
 	max-height: 3.5rem;
 }
+
+p + p {
+	margin-top: 1rem;
+}
+
+li + li {
+	margin-top: 3rem;
+}
