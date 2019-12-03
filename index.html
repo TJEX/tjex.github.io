@@ -26,6 +26,7 @@ layout: default
 	</div>
 	<div class="column">
 		<div class="container">
+			<h1 class="title is-5">Upcoming events...</h1>
 			<ul>
 				{% assign events = site.events | reverse %}
 				{% for event in events limit:5 %}
