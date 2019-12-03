@@ -1,6 +1,6 @@
 <li>
 	<h1 class="title is-5">
-		<a href="{{ event.url }}">{{ event.title }}</a>
+		<a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
 	</h1>
 		<h2 class="subtitle is-6">{{ event.date | date: '%A %b %e, %Y' }}</h2>
 	{{ event.excerpt }}

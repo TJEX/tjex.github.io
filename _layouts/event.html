@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include header.html %}
+
+        <script src="https://kit.fontawesome.com/09a106c908.js"></script>
+    </head>
+    <body class="tjex">
+        {% include nav.html %}
+        <section class="section">
+            <div class="container">
+                <h1 class="title is-4">{{ page.title }}</h1>
+                <h2 class="subtitle is-6">{{ page.date | date: '%A %b %e, %Y' }}</h2>
+                {% for url in page.urls %}
+                    <a href="{{ url.url }}" target="_">{{ url.language }}</a>
+                {% endfor %}
+                <p>
+                    {{ content }}
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

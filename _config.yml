@@ -1,16 +1,23 @@
 timezone: America/Toronto
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+future: true
 
+exclude: ["README.md","LICENSE"]
 
 defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: "default"
-
+  -
+    scope:
+      path: "_events"
+    values:
+      layout: "event"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
 
 collections:
-    events:
-        output: true
-        permalink: /:collection/:name
-        sort_by: date
+  events:
+    output: true
+    permalink: /event/:name
+    sort_by: date
